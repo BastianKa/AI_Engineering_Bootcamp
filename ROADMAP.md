@@ -12,8 +12,8 @@ Arbeitsmodus siehe CLAUDE.md: kurz erklären → selbst probieren lassen → ers
 `phase0-programmierung/`
 Startpunkt für komplette Anfänger. Ohne das hier ergibt der Rest keinen Sinn.
 - 0.1 Variablen, Datentypen, print/input → `lernplan_01_variablen_datentypen.md`
-- 0.2 Kontrollfluss (if/else, Schleifen) — noch zu schreiben
-- 0.3 Funktionen — noch zu schreiben
+- 0.2 Kontrollfluss (if/else, Schleifen) → `lernplan_02_kontrollfluss.md`
+- 0.3 Funktionen → `lernplan_03_funktionen.md`
 - 0.4 Datenstrukturen (Listen, Dicts, Tupel) — noch zu schreiben
 - 0.5 Fehler & Debugging (try/except, Fehler lesen) — noch zu schreiben
 - 0.6 Terminal, venv, pip, Git-Basics — noch zu schreiben
