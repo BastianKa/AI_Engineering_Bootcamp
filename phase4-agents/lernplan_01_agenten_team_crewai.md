@@ -219,7 +219,7 @@ Hinweis: Der Barcode `3017624010701` ist ein echter, öffentlicher Barcode (Nute
 
 ## 🤖 So startest du das Coding-Along mit Claude Code
 
-> Hier ist mein Lernplan (`lernplan_4_agenten_team_crewai.md`), er baut auf Lernplan 1, 1B und 2 auf. Geh mit mir Schritt für Schritt durch Teil B. Erkläre kurz, bevor wir jeden Schritt umsetzen, lass mich aber selbst tippen und frag nach, bevor du Code für mich schreibst.
+> Hier ist mein Lernplan (`phase4-agents/lernplan_01_agenten_team_crewai.md`), er baut auf Phase 1 und Phase 2 auf. Geh mit mir Schritt für Schritt durch Teil B. Erkläre kurz, bevor wir jeden Schritt umsetzen, lass mich aber selbst tippen und frag nach, bevor du Code für mich schreibst.
 
 ---
 

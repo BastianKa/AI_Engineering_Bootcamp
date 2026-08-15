@@ -131,7 +131,7 @@ Zum Modellnamen: `gpt-5.6` ist der aktuelle Standard-Tier (Stand Juli 2026), es 
 
 Lege diese Datei in deinen Projektordner und starte z. B. mit folgendem Prompt:
 
-> Hier ist mein Lernplan (`lernplan_1_llm_grundlagen_chatbot.md`). Ich bin Python-Anfänger. Geh mit mir Schritt für Schritt durch Teil B – Punkt für Punkt. Erkläre kurz, bevor wir jeden Schritt umsetzen, lass mich aber selbst tippen und frag nach, bevor du Code für mich schreibst.
+> Hier ist mein Lernplan (`phase1-llm-fundamentals/lernplan_01_llm_grundlagen_chatbot.md`). Ich bin Python-Anfänger. Geh mit mir Schritt für Schritt durch Teil B – Punkt für Punkt. Erkläre kurz, bevor wir jeden Schritt umsetzen, lass mich aber selbst tippen und frag nach, bevor du Code für mich schreibst.
 
 ---
 

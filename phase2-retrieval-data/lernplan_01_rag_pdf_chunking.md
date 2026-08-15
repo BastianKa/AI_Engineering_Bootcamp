@@ -179,7 +179,7 @@ Hinweis zum Embedding-Modell: `text-embedding-3-small` ist (Stand Juli 2026) wei
 
 ## 🤖 So startest du das Coding-Along mit Claude Code
 
-> Hier ist mein Lernplan (`lernplan_2_rag_pdf_chunking.md`), er baut auf Lernplan 1 auf. Ich bin weiterhin Python-Anfänger. Geh mit mir Schritt für Schritt durch Teil B. Erkläre kurz, bevor wir jeden Schritt umsetzen, lass mich aber selbst tippen und frag nach, bevor du Code für mich schreibst. Die PDF, mit der wir arbeiten, liegt unter [Pfad einfügen].
+> Hier ist mein Lernplan (`phase2-retrieval-data/lernplan_01_rag_pdf_chunking.md`), er baut auf Phase 1 auf. Ich bin weiterhin Python-Anfänger. Geh mit mir Schritt für Schritt durch Teil B. Erkläre kurz, bevor wir jeden Schritt umsetzen, lass mich aber selbst tippen und frag nach, bevor du Code für mich schreibst. Die PDF, mit der wir arbeiten, liegt unter [Pfad einfügen].
 
 ---
 
