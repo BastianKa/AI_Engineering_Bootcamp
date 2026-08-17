@@ -230,3 +230,81 @@ for t in test_werte:
 `if`/`else` gibt direkt `True` oder `False` zurück (Rückgabewert einer Funktion muss kein Text sein — auch Wahrheitswerte gehen). Statt die Funktion einzeln mehrfach aufzurufen, wurden die Testwerte in einer Liste `test_werte` gesammelt und per `for`-Schleife automatisch durchprobiert — Vorgriff auf Listen (Lektion 0.4).
 
 **Kürzer ginge außerdem:** `return zahl % 2 == 0` allein reicht — der Vergleich `zahl % 2 == 0` ist bereits `True` oder `False`, das `if`/`else` drumherum ist nicht nötig.
+
+---
+
+## Phase 0.4 – Übung 1: Liste befüllen und durchlaufen
+
+**Aufgabe:** Erstelle eine Liste `namen` mit 3 Namen. Durchlaufe sie mit einer `for`-Schleife und gib jeden Namen mit `print` aus.
+
+**Lösung:**
+```python
+namen_liste = ["Anna", "Berta", "Peter"]
+
+for name in namen_liste:
+    print(name)
+```
+`namen_liste` ist eine geordnete Sammlung von Strings. Die `for`-Schleife läuft automatisch über jedes Element der Liste (`name` nimmt nacheinander jeden Wert an), ohne dass man Index oder Länge selbst verwalten muss.
+
+---
+
+## Phase 0.4 – Übung 2: Liste verändern
+
+**Aufgabe:** Nimm die Liste aus Übung 1. Füge mit `.append()` einen weiteren Namen hinzu, entferne einen Namen mit `.remove()` und gib die Liste danach aus.
+
+**Lösung:**
+```python
+namen_liste = ["Anna", "Berta", "Peter"]
+
+namen_liste.append("Heinz")
+namen_liste.remove("Anna")
+
+for name in namen_liste:
+    print(name)
+```
+`.append(wert)` hängt ein Element ans Ende der Liste an. `.remove(wert)` sucht den Wert in der Liste und entfernt das erste Vorkommen — anders als bei `del liste[index]` wird hier nach **Wert**, nicht nach Position gesucht.
+
+**Zwischenschritt (unnötig, aber kein Fehler):** die erste Version hat die Liste zusätzlich direkt nach `.append()` ausgegeben (also zweimal insgesamt) — funktional korrekt, aber die Aufgabe wollte nur eine finale Ausgabe am Ende.
+
+---
+
+## Phase 0.4 – Übung 3: Dictionary
+
+**Aufgabe:** Erstelle ein Dict `person` mit den Keys `"name"`, `"alter"`, `"stadt"`. Gib alle drei Werte einzeln über den Key aus. Ändere danach den Wert von `"alter"` und gib das ganze Dict aus.
+
+**Lösung:**
+```python
+person = {"name": "Sam", "alter": 20, "stadt": "Berlin"}
+
+for key, wert in person.items():
+    print(key, wert)
+
+person["alter"] = 30
+print(person)
+```
+`.items()` gibt Key-Wert-Paare zurück, die man in der `for`-Schleife direkt in zwei Variablen (`key`, `wert`) entpacken kann — eleganter als drei einzelne `print(person["..."])`-Zeilen. `person["alter"] = 30` überschreibt den bestehenden Wert zum Key `"alter"`. `print(person)` gibt das komplette Dict aus (`{'name': 'Sam', 'alter': 30, 'stadt': 'Berlin'}`).
+
+**Zwischenschritte (kein Fehler, aber nicht die Aufgabe):** unterwegs wurde mit `person.items()` (View der Paare, kein reines Dict) und `person.values()` (nur Werte, als Antwort auf eine Zwischenfrage) experimentiert — beide sind eigene nützliche Werkzeuge, aber für "gib das ganze Dict aus" ist `print(person)` das Richtige.
+
+---
+
+## Phase 0.4 – Übung 4: Kombination: Liste aus Dicts
+
+**Aufgabe:** Erstelle eine Liste mit 2–3 Dicts (z. B. mehrere Personen wie in Übung 3). Durchlaufe die Liste mit einer `for`-Schleife und gib für jede Person Name und Alter aus.
+
+**Lösung:**
+```python
+Max = {"name": "Max", "alter": 20, "stadt": "Berlin"}
+Merle = {"name": "Merle", "alter": 22, "stadt": "Hamburg"}
+Steffi = {"name": "Steffi", "alter": 25, "stadt": "Aachen"}
+
+personen_liste = [Max, Merle, Steffi]
+
+for personen in personen_liste:
+    print(personen["name"], personen["alter"])
+```
+`personen_liste` ist eine Liste, deren Elemente selbst Dicts sind (nicht nur Namen als Text) — eine Liste kann beliebige Objekte enthalten, auch andere Datenstrukturen. In der `for`-Schleife ist `personen` bei jedem Durchlauf ein komplettes Dict, aus dem man mit `personen["name"]` bzw. `personen["alter"]` gezielt einzelne Werte herausholt.
+
+**Zwischenschritte:**
+- Erste Version hatte `personen_liste` mit den Namen als Strings befüllt (`["Max", "Merle", "Steffi"]`) statt mit den Dict-Variablen selbst — dadurch waren die Dicts in der Schleife nicht erreichbar.
+- Danach der Versuch `personen["name", "alter"]` — das interpretiert Python als **einen** Tupel-Key `("name", "alter")` statt zweier getrennter Zugriffe und wirft einen `KeyError`, da dieser Tupel kein Key im Dict ist. Zwei Werte aus einem Dict holen braucht zwei getrennte `[...]`-Zugriffe.

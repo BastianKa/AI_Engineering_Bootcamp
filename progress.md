@@ -1,13 +1,14 @@
 # Lernfortschritt
 
 **Aktuelle Phase:** 0 – Programmier-Grundlagen
-**Aktuelle Lektion:** 0.4 – Datenstrukturen (Listen, Dicts, Tupel) — noch nicht begonnen
+**Aktuelle Lektion:** 0.5 – Fehler & Debugging (try/except, Fehler lesen) — noch nicht begonnen
 **Programmier-Level (Start):** kompletter Anfänger (Stand 2026-08-15)
 
 ## Abgeschlossen
 - Lektion 0.1 – Variablen, Datentypen, print/input: alle 4 Übungen gelöst (`phase0-programmierung/notebooks/01_variablen_print.py` bis `04_string_vs_zahl.py`)
 - Lektion 0.2 – Kontrollfluss (if/else, Schleifen): alle 4 Übungen gelöst (`05_gerade_ungerade.py` bis `08_summe_for.py`)
 - Lektion 0.3 – Funktionen (def, Parameter, Rückgabewerte): alle 4 Übungen gelöst (`09_begruessen_funktion.py` bis `12_ist_gerade_funktion.py`); hat in Übung 4 bereits eigenständig Listen + for-Schleife kombiniert, bevor Listen formal drankamen
+- Lektion 0.4 – Datenstrukturen (Listen, Dicts, Tupel): alle 4 Übungen gelöst (`13_listen_grundlagen.py`, `14_listen_veraendern.py`, `15_dictionary.py` für Übung 3+4); Tupel wurde nur in der Theorie behandelt, keine eigene Übung dazu im Plan
 
 ## Notizen für künftige Sessions
 - Lernstil: kleine Übungen statt langer Erklärungen. User tippt Code selbst, ich erkläre kurz vorher und frage nach, bevor ich Code schreibe (siehe CLAUDE.md).
